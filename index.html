@@ -9,16 +9,26 @@
   </head>
   <body>
     <div class="container">
-      <h1>Turn Based Fighting Game</h1>
-    </div>
-    <form class="input" action="index.html" method="post">
-      <label for="play1">Player One Name</label>
-      <input class="p1Name" type="text" name="play1">
-      <label for="play2">Player Two Name</label>
-      <input class="p2Name" type="text" name="play2">
+      <h1>TBFG</h1>
+      <canvas id="myCanvas" width="900" height="500" style="border:1px solid black"></canvas>
+    <form id="input-form">
+      <label for="play1">Name your player</label>
+      <input  id="nameInput" type="text">
+      <button class="input-submit" type="submit" name="button">Create Player</button>
     </form>
+  </div>
+  <div class="col-md-6">
+  <div class="well">
+    <ul id="play1"></ul>
+  </div>
+  </div>
+  <div class="col-md-6">
+  <div class="well" id="play2">
+    <h2></h2>
+  </div>
+  </div>
 
-  </body>
+</body>
   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </html>
